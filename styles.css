@@ -1,0 +1,75 @@
+/* I start the CSS file with the most general tags. * and body select all of the elements in the document and document body respectively. */
+
+* {
+margin:0px;
+padding: 0px;
+}
+
+body {
+    background-color: burlywood;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 10%;
+}
+
+/* My next step is to style the general semantic tags. These are h1, h2, h3, p ect. They are very general selectors that I can override with specific selectors like classes and IDs */
+
+h1{
+    font-size: 62px;
+    font-family: 'Space Mono', monospace;
+    margin-bottom: 24px;
+    color: rgb(23, 56, 56);
+} 
+
+h2{
+font-size: 24px;
+font-family: Arial, Helvetica, sans-serif;
+margin-bottom: 12px;
+}
+
+h3 {
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 12px;
+    color: rgb(23, 56, 56);
+    }
+
+p {
+    font-size: 18px;
+    font-family: 'Courier New', Courier, monospace;
+    margin-bottom: 20px;
+    line-height: 24px;
+}
+/* 
+Next I add more specific selectors. These are classes and IDs. 
+
+I indicate a class with a "." and an ID with a "#"
+
+Note that IDs are more specific than classes and will override them.  */
+
+.pullquote {
+    font-size: 24px;
+    font-family: 'Courier New', Courier, monospace;
+    margin-bottom: 20px;
+    line-height: 30px;
+    color: crimson;
+}
+
+/* I can add a hover state by adding a :hover after the class or ID declaration.  */
+
+.pullquote:hover{
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 20px;
+    line-height: 30px;
+    color: rgb(255, 255, 255);
+}
+
+#pullquotespecial{
+    font-size: 24px;
+    font-family: 'Courier New', Courier, monospace;
+    margin-bottom: 20px;
+    line-height: 30px;
+    color: rgb(23, 56, 56);
+
+}
